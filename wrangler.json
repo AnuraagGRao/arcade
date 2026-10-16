@@ -1,0 +1,10 @@
+{
+  "name": "arcade-hub",
+  "compatibility_date": "2024-12-30",
+  "assets": {
+    "directory": "."
+  },
+  "routes": [
+    { "pattern": "arcade.anuraaggrao.com", "custom_domain": true }
+  ]
+}
