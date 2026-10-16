@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcade // Anuraag Rao Virtual Arcadia</title>
+  <meta name="description" content="Experimental web game lab by Anuraag Rao featuring custom canvas renderers, relativistic N-body orbital physics, and roguelite survivor engines.">
+  <meta name="keywords" content="Anuraag Rao, Arcade, Web Games, Roguelite, Relativistic Physics, Canvas Games, Indie Games">
+  <meta property="og:title" content="Arcade // Anuraag Rao Game Lab">
+  <meta property="og:description" content="Play custom canvas games, survivor roguelites, and deep-space orbital simulators built by Anuraag Rao.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arcade.anuraaggrao.com/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕹️</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Starfield Canvas -->
+  <canvas id="starfield"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="scanlines"></div>
+
+  <div class="arcade-container">
+    <!-- Top Navigation -->
+    <header class="arcade-nav">
+      <a href="https://anuraaggrao.com" class="brand-badge">
+        <div class="brand-logo-icon">🕹️</div>
+        <div class="brand-title">ARCADE // <span>ANURAAG RAO</span></div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="https://anuraaggrao.com" class="nav-link">PORTFOLIO ↗</a>
+        <a href="https://music.anuraaggrao.com" class="nav-link">MUSIC VAULT ↗</a>
+        <a href="https://status.anuraaggrao.com" class="nav-link">SYSTEM STATUS ↗</a>
+        <button id="audioToggle" class="audio-toggle-btn" title="Toggle Synthesized SFX">
+          <span>🔊</span> SFX: ON
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-pill">VIRTUAL ARCADIA // RELEASE V2.4</div>
+      <h1 class="hero-title">
+        EXPERIMENTAL <span class="hero-gradient">GAME LAB</span>
+      </h1>
+      <p class="hero-subtitle">
+        Custom canvas renderers, relativistic N-body orbital gravity wells, and bullet-heaven guardian familiars — built from scratch with pure Web standards and original synthesizers.
+      </p>
+
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <span class="hero-stat-number">3</span>
+          <span class="hero-stat-label">Active Titles</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-number">4</span>
+          <span class="hero-stat-label">Original Tracks</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-number">0</span>
+          <span class="hero-stat-label">Bloatware / Engines</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-number">60+</span>
+          <span class="hero-stat-label">FPS Native Canvas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Games Showcase Grid -->
+    <main class="games-grid">
+      <!-- Game 1: Companion Protocol -->
+      <article class="game-card card-companion">
+        <div class="card-header">
+          <span class="card-badge">SURVIVOR ROGUELITE</span>
+          <div class="card-icon">⚔️</div>
+        </div>
+
+        <div class="card-body">
+          <h2 class="card-title">Companion Protocol</h2>
+          <div class="card-domain">companion.anuraaggrao.com ↗</div>
+          <p class="card-desc">
+            Edge protocol survivor roguelite where human operators are mortal, but guardian familiars (Koji, Mochi, Kai) are immortal anomalies orbiting with neural tethers, autonomous railguns, and quantum pulses.
+          </p>
+
+          <div class="card-features">
+            <span class="feature-pill">3 Mortal Operators</span>
+            <span class="feature-pill">3 Immortal Guardians</span>
+            <span class="feature-pill">Emotional Retry Modal</span>
+            <span class="feature-pill">Lofi + Synthwave BGM</span>
+            <span class="feature-pill">Custom Master Volume</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a href="https://companion.anuraaggrao.com" class="btn-launch" target="_blank" rel="noopener noreferrer">
+            <span>Play Live</span>
+            <span>↗</span>
+          </a>
+          <a href="https://github.com/AnuraagGRao/companion-protocol" class="btn-repo" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+            Source ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Game 2: Orbit Drift -->
+      <article class="game-card card-orbit">
+        <div class="card-header">
+          <span class="card-badge">RELATIVISTIC SIMULATOR</span>
+          <div class="card-icon">🪐</div>
+        </div>
+
+        <div class="card-body">
+          <h2 class="card-title">Orbit Drift</h2>
+          <div class="card-domain">orbit.anuraaggrao.com ↗</div>
+          <p class="card-desc">
+            Deep-space trajectory simulator navigating multi-body gravitational wells, binary pulsar hazards, relativistic wormholes, and relic crystals using an RK4 numerical physics integrator.
+          </p>
+
+          <div class="card-features">
+            <span class="feature-pill">320-Step Trajectory Aiming</span>
+            <span class="feature-pill">8 Campaign Sectors</span>
+            <span class="feature-pill">Infinite Procedural Seeds</span>
+            <span class="feature-pill">Celestial Drone DSP</span>
+            <span class="feature-pill">Dynamic Master Volume</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a href="https://orbit.anuraaggrao.com" class="btn-launch" target="_blank" rel="noopener noreferrer">
+            <span>Play Live</span>
+            <span>↗</span>
+          </a>
+          <a href="https://github.com/AnuraagGRao/orbital-gravity" class="btn-repo" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+            Source ↗
+          </a>
+        </div>
+      </article>
+
+      <!-- Game 3: Tetra Overflow Ultra -->
+      <article class="game-card card-tetra">
+        <div class="card-header">
+          <span class="card-badge">ARCADE PUZZLE</span>
+          <div class="card-icon">🕹️</div>
+        </div>
+
+        <div class="card-body">
+          <h2 class="card-title">Tetra Overflow Ultra</h2>
+          <div class="card-domain">tetra.anuraaggrao.com ↗</div>
+          <p class="card-desc">
+            Tactile, mobile-first arcade puzzle engine featuring custom touch drag/flick gestures, progressive Zodiac level challenges, fluid matrix particle drops, and signature time-dilation Zone mechanics.
+          </p>
+
+          <div class="card-features">
+            <span class="feature-pill">Mobile-First Gesture Engine</span>
+            <span class="feature-pill">Zodiac Level Progression</span>
+            <span class="feature-pill">Time-Dilation Zone</span>
+            <span class="feature-pill">Retro Chiptune DSP</span>
+            <span class="feature-pill">PWA Offline Support</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a href="https://tetra.anuraaggrao.com" class="btn-launch" target="_blank" rel="noopener noreferrer">
+            <span>Play Live</span>
+            <span>↗</span>
+          </a>
+          <a href="https://github.com/AnuraagGRao/tetra-overflow" class="btn-repo" target="_blank" rel="noopener noreferrer" title="View Source on GitHub">
+            Source ↗
+          </a>
+        </div>
+      </article>
+    </main>
+
+    <!-- Original Soundtracks Section -->
+    <section class="soundtrack-banner">
+      <div class="soundtrack-header">
+        <h3 class="soundtrack-title">
+          <span>🎧</span> ORIGINAL ARCADE SOUNDTRACKS
+        </h3>
+        <a href="https://music.anuraaggrao.com" class="nav-link" target="_blank" rel="noopener noreferrer">
+          OPEN IN MUSIC VAULT ↗
+        </a>
+      </div>
+
+      <div class="soundtrack-tracks">
+        <div class="track-item">
+          <div class="track-info">
+            <div class="track-name">Midnight at the Bamboo Gate</div>
+            <div class="track-genre">Neo-Tokyo Lofi // 86 BPM</div>
+            <div class="track-game">Companion Protocol (Lobby Theme)</div>
+          </div>
+          <span>🎵</span>
+        </div>
+
+        <div class="track-item">
+          <div class="track-info">
+            <div class="track-name">Turbo Arcade Runner</div>
+            <div class="track-genre">Synthwave Electro // 130 BPM</div>
+            <div class="track-game">Companion Protocol (Wave Combat)</div>
+          </div>
+          <span>⚡</span>
+        </div>
+
+        <div class="track-item">
+          <div class="track-info">
+            <div class="track-name">Hardline Extraction</div>
+            <div class="track-genre">Darksynth Breakbeat // 144 BPM</div>
+            <div class="track-game">Companion Protocol (Boss Overdrive)</div>
+          </div>
+          <span>🔥</span>
+        </div>
+
+        <div class="track-item">
+          <div class="track-info">
+            <div class="track-name">Orbiting the Pale Star</div>
+            <div class="track-genre">Ambient Deep Space // 60 BPM</div>
+            <div class="track-game">Orbit Drift (Celestial Flight)</div>
+          </div>
+          <span>🌌</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="arcade-footer">
+      <div>DESIGNED & CODED BY ANURAAG GOPINATH RAO · OPERATING WITH KEI</div>
+      <div>
+        <a href="https://anuraaggrao.com">anuraaggrao.com</a> · 
+        <a href="https://github.com/AnuraagGRao">github.com/AnuraagGRao</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
