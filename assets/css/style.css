@@ -298,6 +298,11 @@ body {
   --card-glow: rgba(99, 102, 241, 0.25);
 }
 
+.card-restart {
+  --card-accent: #ff4655;
+  --card-glow: rgba(255, 70, 85, 0.28);
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;
